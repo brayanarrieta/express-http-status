@@ -7,6 +7,7 @@ export interface StatusCodeObj {
   jsdoc: {
     reference?: string;
     documentation: string;
+    isDeprecated?: boolean;
   };
   isExperimental?: boolean;
   origin: string;

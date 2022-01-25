@@ -16,10 +16,11 @@ export const generateStatusCodes = async () => {
         const statusCode: any = { key, value: code };
 
         if (jsdoc) {
-          const docs = [jsdoc.documentation];
+          const { documentation, reference, isDeprecated } = jsdoc;
+          const docs = [`${isDeprecated ? '@deprecated\n' : ''}${documentation}`];
 
-          if (jsdoc.reference) {
-            docs.push(generateJSDocLink(jsdoc.reference, 'Official Documentation'));
+          if (reference) {
+            docs.push(generateJSDocLink(reference, 'Official Documentation'));
           }
           statusCode.docs = [docs.join('\n\n')];
         }
