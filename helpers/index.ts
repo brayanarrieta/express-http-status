@@ -1,0 +1,1 @@
+export { generateJSDocLink } from './jsdocHelpers';
