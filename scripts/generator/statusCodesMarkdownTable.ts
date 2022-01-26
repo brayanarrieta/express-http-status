@@ -13,7 +13,7 @@ export const generateStatusCodesMarkdownTable = async () => {
   try {
     const table = markdownTable([
       ['HTTP Status Code', 'Key', 'Description', 'Origin'],
-      ...STATUS_CODES.map(
+      ...STATUS_CODES.filter(({ jsdoc }) => !jsdoc.isDeprecated).map(
         ({
           code, key, description, origin,
         }: StatusCodeObj) => (

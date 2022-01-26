@@ -47,7 +47,6 @@ StatusCodes.NOT_FOUND // 404
 | 302              | FOUND                           | Found                           | RFC7231     |
 | 303              | SEE_OTHER                       | See Other                       | RFC7231     |
 | 304              | NOT_MODIFIED                    | Not Modified                    | RFC7232     |
-| 305              | USE_PROXY                       | Use Proxy                       | RFC7231     |
 | 307              | TEMPORARY_REDIRECT              | Temporary Redirect              | RFC7231     |
 | 308              | PERMANENT_REDIRECT              | Permanent Redirect              | RFC7538     |
 | 400              | BAD_REQUEST                     | Bad Request                     | RFC7231     |
