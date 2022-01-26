@@ -1,6 +1,6 @@
 {
   "name": "express-http-status",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Package includes all Official HTTP Response Status Codes and others unofficial.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
