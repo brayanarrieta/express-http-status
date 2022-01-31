@@ -69,5 +69,12 @@ Object {
     "USE_PROXY": 305,
     "VARIANT_ALSO_NEGOTIATES": 506,
   },
+  "StatusCodesClasses": Object {
+    "CLIENT_ERROR": "4xx",
+    "INFORMATIONAL": "1xx",
+    "REDIRECTION": "3xx",
+    "SERVER_ERROR": "5xx",
+    "SUCCESS": "2xx",
+  },
 }
 `;

@@ -23,12 +23,11 @@
   },
   "keywords": [
     "node",
-    "client",
     "http",
     "HttpStatus",
     "status",
     "codes",
-    "browser"
+    "express"
   ],
   "author": "brayanarrieta",
   "license": "MIT",

@@ -3,7 +3,7 @@ import { generateJSDocLink } from '../../helpers';
 import { STATUS_CODES } from '../../constants';
 import {
   disableEslintOnFile, generateConstantsStructures, generateFileWithConstants, saveProjectChanges,
-} from './typescriptCompiler';
+} from '../typescriptCompiler';
 
 const PATH_FILENAME = 'src/StatusCodes.ts';
 

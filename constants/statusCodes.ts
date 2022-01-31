@@ -1,9 +1,6 @@
-import { generateJSDocLink } from './helpers';
-import { StatusCodeObj } from './types';
+import { generateJSDocLink } from '../helpers';
+import { StatusCodeObj } from '../types';
 
-export const DISABLE_ESLINT_COMMENT = '/* eslint-disable */';
-
-// TODO: Deprecate some status codes
 export const STATUS_CODES: StatusCodeObj[] = [
   {
     key: 'CONTINUE',
