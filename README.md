@@ -23,7 +23,7 @@ StatusCodes.CREATED // 201
 StatusCodes.NOT_FOUND // 404
 ```
 
-## HTTP Response Status Codes Collection
+#### HTTP Response Status Codes Collection
 
 <!-- HTTP_RESPONSE_STATUS_CODES_MARKDOWN_TABLE:START -->
 | HTTP Status Code | Key                             | Description                     | Origin      |
@@ -92,4 +92,29 @@ StatusCodes.NOT_FOUND // 404
 | 510              | NOT_EXTENDED                    | Not Extended                    | RFC2774     |
 | 511              | NETWORK_AUTHENTICATION_REQUIRED | Network Authentication Required | RFC6585     |
 | 599              | NETWORK_CONNECT_TIMEOUT_ERROR   | Network Connect Timeout Error   | No Official |
-<!-- HTTP_RESPONSE_STATUS_CODES_MARKDOWN_TABLE:END -->
+<!-- HTTP_RESPONSE_STATUS_CODES_MARKDOWN_TABLE:START -->
+
+### Enum collection of HTTP Response Status Codes Classes
+
+```javascript
+import {
+	StatusCodesClasses,
+} from 'express-http-status';
+
+// For example
+StatusCodesClasses.INFORMATIONAL // '1xx'
+StatusCodesClasses.SUCCESS // '2xx'
+StatusCodesClasses.REDIRECTION // '3xx'
+StatusCodesClasses.CLIENT_ERROR // '4xx'
+StatusCodesClasses.SERVER_ERROR // '5xx'
+```
+
+<!-- HTTP_RESPONSE_STATUS_CODES_CLASSES_MARKDOWN_TABLE:START -->
+| HTTP Status Code Class | Key           | Value |
+| ---------------------- | ------------- | ----- |
+| 1×× Informational      | INFORMATIONAL | '1xx' |
+| 2×× Success            | SUCCESS       | '2xx' |
+| 3×× Redirection        | REDIRECTION   | '3xx' |
+| 4×× Client Error       | CLIENT_ERROR  | '4xx' |
+| 5×× Server Error       | SERVER_ERROR  | '5xx' |
+<!-- HTTP_RESPONSE_STATUS_CODES_CLASSES_MARKDOWN_TABLE:END -->

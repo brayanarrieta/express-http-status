@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusCodesClasses should export the correct structure 1`] = `
+Object {
+  "CLIENT_ERROR": "4xx",
+  "INFORMATIONAL": "1xx",
+  "REDIRECTION": "3xx",
+  "SERVER_ERROR": "5xx",
+  "SUCCESS": "2xx",
+}
+`;
