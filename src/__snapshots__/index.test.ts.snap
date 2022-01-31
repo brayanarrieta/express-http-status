@@ -76,5 +76,6 @@ Object {
     "SERVER_ERROR": "5xx",
     "SUCCESS": "2xx",
   },
+  "getClassByStatusCode": [Function],
 }
 `;

@@ -38,6 +38,20 @@ StatusCodesClasses.CLIENT_ERROR // '4xx'
 StatusCodesClasses.SERVER_ERROR // '5xx'
 ```
 
+### Method getClassByStatusCode returns the group class of the HTTP Status Codes in the same format as the StatusCodesClasses collection
+
+```javascript
+import {
+	getClassByStatusCode,
+} from 'express-http-status';
+
+// For example
+getClassByStatusCode(100) // '1xx'
+getClassByStatusCode(404) // '4xx'
+```
+
+**Note**: In case of the HTTP Code Status provided as param doesn't exist or is not registered in the StatusCodes collection will throw an error with the message `HTTP Status Code STATUS_CODE does not exist` 
+
 ## Collections
 
 ### HTTP Response Status Codes Collection
