@@ -23,7 +23,24 @@ StatusCodes.CREATED // 201
 StatusCodes.NOT_FOUND // 404
 ```
 
-#### HTTP Response Status Codes Collection
+### Enum collection of HTTP Response Status Codes Classes
+
+```javascript
+import {
+	StatusCodesClasses,
+} from 'express-http-status';
+
+// For example
+StatusCodesClasses.INFORMATIONAL // '1xx'
+StatusCodesClasses.SUCCESS // '2xx'
+StatusCodesClasses.REDIRECTION // '3xx'
+StatusCodesClasses.CLIENT_ERROR // '4xx'
+StatusCodesClasses.SERVER_ERROR // '5xx'
+```
+
+## Collections
+
+### HTTP Response Status Codes Collection
 
 <!-- HTTP_RESPONSE_STATUS_CODES_MARKDOWN_TABLE:START -->
 | HTTP Status Code | Key                             | Description                     | Origin      |
@@ -94,20 +111,7 @@ StatusCodes.NOT_FOUND // 404
 | 599              | NETWORK_CONNECT_TIMEOUT_ERROR   | Network Connect Timeout Error   | No Official |
 <!-- HTTP_RESPONSE_STATUS_CODES_MARKDOWN_TABLE:START -->
 
-### Enum collection of HTTP Response Status Codes Classes
-
-```javascript
-import {
-	StatusCodesClasses,
-} from 'express-http-status';
-
-// For example
-StatusCodesClasses.INFORMATIONAL // '1xx'
-StatusCodesClasses.SUCCESS // '2xx'
-StatusCodesClasses.REDIRECTION // '3xx'
-StatusCodesClasses.CLIENT_ERROR // '4xx'
-StatusCodesClasses.SERVER_ERROR // '5xx'
-```
+### HTTP Response Status Codes Classes Collection
 
 <!-- HTTP_RESPONSE_STATUS_CODES_CLASSES_MARKDOWN_TABLE:START -->
 | HTTP Status Code Class | Key           | Value |
