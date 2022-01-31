@@ -5,7 +5,7 @@ import {
   VariableDeclarationKind,
 } from 'ts-morph';
 import { DISABLE_ESLINT_COMMENT } from '../../constants';
-import { ConstantMember, GenerateFileWithConstantsParams } from '../../types';
+import { ConstantMember, ConstantMemberType, GenerateFileWithConstantsParams } from '../../types';
 
 const project = new Project({
   tsConfigFilePath: 'tsconfig.json',
@@ -35,7 +35,9 @@ export const disableEslintOnFile = (pathFileName: string) => {
 export const generateConstantsStructures = (
   members: ConstantMember[],
 ): StatementStructures[] => members.map(
-  ({ key: name, value, docs }) => ({
+  ({
+    key: name, value, docs, type,
+  }) => ({
     name,
     value,
     docs,
@@ -44,7 +46,7 @@ export const generateConstantsStructures = (
     isExported: true,
     declarations: [{
       name,
-      initializer: value.toString(),
+      initializer: type === ConstantMemberType.STRING ? `'${value}'` : value.toString(),
     }],
   }),
 );
