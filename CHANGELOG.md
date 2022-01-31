@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/brayanarrieta/express-http-status/compare/v1.0.1...v1.1.0) (2022-01-31)
+
+
+### Features
+
+* add new HTTP Status Codes Classes enum ([d5c638d](https://github.com/brayanarrieta/express-http-status/commit/d5c638dc8c98aec19bc09e381070d030d4b898f1))
+
 ## [1.0.1](https://github.com/brayanarrieta/express-http-status/compare/v1.0.0...v1.0.1) (2022-01-26)
 
 
